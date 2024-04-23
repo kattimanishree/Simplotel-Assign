@@ -1,0 +1,228 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#home {
+    position: relative;
+}
+
+#lorem {
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to right, rgb(12, 11, 12), rgb(130, 130, 128));
+    width: 35%;
+    text-align: center; 
+    display: inline-block;
+    padding: 15px;
+    font-family: sans-serif;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    z-index: 40;
+}
+
+#lorem h1 {
+    font-size: 30px;
+    color: rgb(244, 241, 241);
+    letter-spacing: 2.5px;
+}
+
+#lorem p {
+    line-height: 25px;
+    width: 82%;
+    margin-top: 2%;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+#home_image {
+    height: 690px;
+    overflow: hidden;
+    object-fit: Square;
+}
+
+#image1 {
+    width: 100%;
+    height: 100%;
+}
+#textdiv{
+    display: flex;
+    background-color: rgb(209, 204, 204);
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.para{
+    width: 30%;
+    padding: 30px;
+    font-family: "calibri", sans-serif;
+    text-align: center;
+}
+
+
+#div {
+    height: 100px;
+    background:rgb(172, 171, 169);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    margin: auto;
+    margin-top: 2%;
+    letter-spacing: 1px;
+    margin-bottom: 100px;
+}
+
+#container>div {
+    margin: 20px;
+    background-color: white;
+    
+}
+
+#container>div>div {
+    height: 50%;
+    margin: 0px;
+    overflow: hidden;
+    object-fit: contain;
+}
+
+#container>div>div>img {
+    width: 100%;
+    height: 100%;
+}
+
+#lorem>div>button {
+    border-radius: 50px;
+    padding: 20px 70px;
+    margin-top: 80px;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 10%;
+    border: none;
+    background-color: rgb(255, 196, 189);
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 5%;
+}
+.loremhome{
+    margin-left: 90px;
+    margin-top: 30px;
+}
+.dining{
+    text-align: center;
+}
+.pool{
+    text-align: right;
+}
+.button1{
+    background-color: black;
+    margin-top: 30px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: start;
+    width: fit-content;
+    border-radius: 2px;
+}
+.button2{
+    background-color: black;
+    margin-top: 30px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    border-radius: 2px;
+}
+.button3{
+    background-color: black;
+    margin-top: 30px;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    display: flex;
+    justify-content: right;
+    width: fit-content;
+    border-radius: 2px;
+}
+p{
+    font-family: "calibri", sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+
+/* For Medium Screen (For Tablet)*/
+@media all and (min-width: 481px) and (max-width:768px) {
+    #lorem {
+        padding: 20px;
+        width: 50%;
+    }
+
+    #lorem h1 {
+        font-size: 40px;
+    }
+
+    #lorem p {
+        width: 80%;
+        line-height: 22px;
+    }
+
+    #container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+
+    #home>div>button {
+        margin-bottom: 17%;
+    }
+}
+
+/* For Small Screen (For Mobile Screen)*/
+@media all and (min-width: 320px) and (max-width:480px) {
+    #lorem {
+        padding: 3px;
+        width: 50%;
+    }
+
+    #lorem h1 {
+        font-size: 20px;
+    }
+
+    #lorem p {
+        width: 100%;
+        line-height: 18px;
+    }
+
+    #lorem {
+        margin-top: 3%;
+    }
+    #image1 {
+        width: 100%;
+        height: auto;
+    }
+    #home_image{
+        height: auto;
+    }
+    .para{
+        width: 100%;
+    }
+    
+
+    #container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    #home>div>button {
+        margin-bottom: 25%;
+    }
+}
